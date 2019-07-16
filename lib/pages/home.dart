@@ -7,7 +7,23 @@ class Home extends StatelessWidget {
       appBar: AppBar(
         title: Text('一点生鲜'),
       ),
-      body: Text('我是首页'),
+      body: Column(
+        children: <Widget>[
+          Row(children: <Widget>[
+            Text('我是首页')
+          ],),
+          Row(children: <Widget>[
+            RaisedButton(
+              child: Text('点我进详情'),
+              onPressed: () {
+                Navigator.pushNamed(context, '/details', arguments: {
+                  'id': 1,
+                });
+              },
+            )
+          ],)
+        ],
+      ),
     );
   }
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import './navigationBar.dart';
+import './routes.dart';
+
 void main() => runApp(App());
 
 class App extends StatelessWidget {
@@ -10,7 +11,8 @@ class App extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: NavigationBar()
+      initialRoute: '/',
+      onGenerateRoute: onGenerateRoute
     );
   }
 }
