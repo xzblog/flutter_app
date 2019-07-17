@@ -30,7 +30,8 @@ class _NavigationBarState extends State<NavigationBar> {
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _index,
         type: BottomNavigationBarType.fixed,
-        iconSize: 30.0,
+        selectedFontSize: 12.0,
+        iconSize: 28.0,
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
