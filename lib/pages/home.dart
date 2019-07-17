@@ -20,6 +20,12 @@ class Home extends StatelessWidget {
                   'id': 1,
                 });
               },
+            ),
+            RaisedButton(
+              child: Text('登录'),
+              onPressed: () {
+                Navigator.pushNamed(context, '/login');
+              },
             )
           ],)
         ],

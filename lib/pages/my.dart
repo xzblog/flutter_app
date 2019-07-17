@@ -12,7 +12,10 @@ class My extends StatelessWidget {
           height: 120.0,
           decoration: BoxDecoration(
             gradient: LinearGradient(colors: [Color(0xFF58C7FA), Color(0xFF52BBF9), Color(0xFF4CAFF8)]),
-            image: DecorationImage( image: NetworkImage('http://puqovkxfe.bkt.clouddn.com/image/mine/mine_user_background.png'), fit: BoxFit.cover),
+            image: DecorationImage( 
+              image: NetworkImage('http://puqovkxfe.bkt.clouddn.com/image/mine/mine_user_background.png'), 
+              fit: BoxFit.cover
+            ),
           ),
         ),
         Row(
