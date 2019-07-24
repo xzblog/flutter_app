@@ -3,11 +3,13 @@ import 'package:flutter/material.dart';
 // 引入所有需要设置路由的文件
 import './navigationBar.dart';
 import './pages/details.dart';
+import './pages/orderList.dart';
 
 
 // 路由重命名
 final routes = {
   '/': (context, { arguments }) => NavigationBar(),
+  '/orderList': (context, { arguments }) => OrderList(),
   '/details': (context, { arguments }) => Details(arguments: arguments),
 };
 

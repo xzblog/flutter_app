@@ -8,6 +8,7 @@ class Details extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         title: Text('我是详情页'),
       ),
       body: Text('我是详情${arguments["id"]}'),

@@ -5,6 +5,24 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: Icon(Icons.menu),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.more),
+            onPressed: () {
+              print('更多');
+            },
+          ),
+        ],
+        actionsIconTheme: IconThemeData(color: Colors.black, opacity: 0.1, size: 12.0),
+        iconTheme: IconThemeData(color: Colors.black),
+        titleSpacing: 100.0,
+        backgroundColor: Color(0xFF0abdff),
+        brightness: Brightness.dark,
+        toolbarOpacity: 0.5,
+        elevation: 1.0,
+        flexibleSpace: Container(child: Text('大苏打实打实的'),),
+        centerTitle: true,
         title: Text('一点生鲜'),
       ),
       body: Column(
@@ -19,6 +37,12 @@ class Home extends StatelessWidget {
                 Navigator.pushNamed(context, '/details', arguments: {
                   'id': 1,
                 });
+              },
+            ),
+            RaisedButton(
+              child: Text('订单列表'),
+              onPressed: () {
+                Navigator.pushNamed(context, '/orderList');
               },
             )
           ],)
