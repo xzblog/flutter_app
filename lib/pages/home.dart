@@ -44,6 +44,12 @@ class Home extends StatelessWidget {
               onPressed: () {
                 Navigator.pushNamed(context, '/orderList');
               },
+            ),
+            RaisedButton(
+              child: Text('登录'),
+              onPressed: () {
+                Navigator.pushNamed(context, '/login');
+              },
             )
           ],)
         ],

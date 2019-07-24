@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import './navigationBar.dart';
 import './pages/details.dart';
 import './pages/orderList.dart';
+import './pages/user/login.dart';
 
 
 // 路由重命名
@@ -11,6 +12,7 @@ final routes = {
   '/': (context, { arguments }) => NavigationBar(),
   '/orderList': (context, { arguments }) => OrderList(),
   '/details': (context, { arguments }) => Details(arguments: arguments),
+  '/login': (context) => Login(),
 };
 
 // 用MaterialPageRoute生成路由
