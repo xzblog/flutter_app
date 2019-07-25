@@ -5,6 +5,8 @@ import './navigationBar.dart';
 import './pages/details.dart';
 import './pages/orderList.dart';
 import './pages/user/login.dart';
+import './pages/user/resume.dart';
+import './pages/bottomNavigationBar/raisedBottomNavigationBar.dart';
 
 
 // 路由重命名
@@ -13,6 +15,10 @@ final routes = {
   '/orderList': (context, { arguments }) => OrderList(),
   '/details': (context, { arguments }) => Details(arguments: arguments),
   '/login': (context) => Login(),
+  '/resume': (context) => Resume(),
+  
+  '/raisedNavigationBar': (context) => RaisedBottomNavigationBar(),
+
 };
 
 // 用MaterialPageRoute生成路由

@@ -30,28 +30,43 @@ class Home extends StatelessWidget {
           Row(children: <Widget>[
             Text('我是首页')
           ],),
-          Row(children: <Widget>[
-            RaisedButton(
-              child: Text('点我进详情'),
-              onPressed: () {
-                Navigator.pushNamed(context, '/details', arguments: {
-                  'id': 1,
-                });
-              },
-            ),
-            RaisedButton(
-              child: Text('订单列表'),
-              onPressed: () {
-                Navigator.pushNamed(context, '/orderList');
-              },
-            ),
-            RaisedButton(
-              child: Text('登录'),
-              onPressed: () {
-                Navigator.pushNamed(context, '/login');
-              },
-            )
-          ],)
+          Wrap(
+            spacing: 10.0,
+            children: <Widget>[
+              RaisedButton(
+                child: Text('点我进详情'),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/details', arguments: {
+                    'id': 1,
+                  });
+                },
+              ),
+              RaisedButton(
+                child: Text('订单列表'),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/orderList');
+                },
+              ),
+              RaisedButton(
+                child: Text('登录'),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/login');
+                },
+              ),
+              RaisedButton(
+                child: Text('简历'),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/resume');
+                },
+              ),
+              RaisedButton(
+                child: Text('凸起的底部导航'),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/raisedNavigationBar');
+                },
+              ),
+            ],
+          ),
         ],
       ),
     );

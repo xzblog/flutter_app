@@ -12,10 +12,16 @@ class OrderList extends StatelessWidget {
           title: Text('订单列表'),
           centerTitle: true,
           elevation: 0.5,
-          brightness: Brightness.light,
+          brightness: Brightness.dark,
           actions: <Widget>[
             IconButton(
               icon: Icon(Icons.face),
+              onPressed: () {
+                print('在线客户为你服务');
+              },
+            ),
+            IconButton(
+              icon: Icon(Icons.more),
               onPressed: () {
                 print('在线客户为你服务');
               },
@@ -50,7 +56,7 @@ class OrderList extends StatelessWidget {
             ],
           ),
           ),
-          bottomOpacity: 0.8,
+          // bottomOpacity: 0.5,
         ),
         body: TabBarView(
           children: <Widget>[
