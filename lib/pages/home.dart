@@ -67,6 +67,62 @@ class Home extends StatelessWidget {
               ),
             ],
           ),
+
+          Text(
+            'Hello, Miracle! nice to meat you? hei hei hei',
+            textAlign: TextAlign.left,
+            overflow:TextOverflow.ellipsis,
+            maxLines: 1,
+            style: TextStyle(
+              fontSize:25.0,
+              color:Color.fromARGB(255, 255, 150, 150),
+              decoration:TextDecoration.underline,
+              decorationStyle:TextDecorationStyle.solid,
+            ),
+          ),
+          CircleAvatar(
+            backgroundImage: NetworkImage('http://qiniu.yogoo.co/miracle/avatar_lady.jpg'),
+            foregroundColor: Colors.black,
+            radius: 40.0,
+            child: Text('Miracle'),
+          ),
+          Row(children: <Widget>[
+            Expanded(
+              child: Container(
+                child: Text('我也不知道写啥啊'),
+              )
+            )
+          ],),
+          Container(
+            width: 120,
+            height: 60,
+            decoration: BoxDecoration(border: Border.all(color: Colors.black, width: 1)),
+            child: Stack(
+              children: <Widget>[
+                CircleAvatar(
+                  backgroundImage: NetworkImage('http://qiniu.yogoo.co/miracle/avatar_lady.jpg'),
+                ),
+                Positioned(
+                  bottom: 0,
+                  child: Text('Miracle'),
+                ),
+              ],
+            ),
+          )
+          // GridView(
+          //   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          //   crossAxisCount: 3,
+          //     mainAxisSpacing: 2.0,
+          //     crossAxisSpacing: 2.0,
+          //     childAspectRatio: 0.7
+          //   ),
+          //   // padding: EdgeInsets.all(10.0),
+          //   children: <Widget>[
+          //     Text('dasds '),
+          //     Text('dasds '),
+          //     Text('dasds '),
+          //   ],
+          // )
         ],
       ),
     );
